@@ -18,14 +18,17 @@ int main (){
     cin >> yaxis;
     cout << "Ingresa La letra limite:" << endl;
     cin >> letter;
-    size_t pos = letters.find(letter);
-    letters = letters.substr(0, pos + 1);
+    size_t pos = letters.find(letter) + 1;
+    letters = letters.substr(0, pos);
     string changin = letters;
     int white = 0;
     bool rev = false;
 
     cout << changin;
-
+    for (int i = 0; i < yaxis; i++){
+        int limit = 0;
+        
+    }
 
     return 0;
 }
