@@ -2,12 +2,13 @@
 #include <iostream>       // std::cout
 #include <string>         // std::string
 
+using namespace std;
 int main ()
 {
-  std::string str ("There are two needles in this haystack with needles.");
-  std::string str2 ("needle");
-  std::size_t found = str.find(str2);
-    std::cout << "first 'needle' found at: " << found << '\n';
+  string str  = "There are two needles in this haystack with needles.";
+  string str2 ("needle");
+  size_t found = str.find(str2);
+  cout << "first 'needle' found at: " << found % 3 << '\n';
 
  
   return 0;
