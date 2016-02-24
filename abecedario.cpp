@@ -7,18 +7,26 @@ using namespace std;
 
 
 int main (){
-  string letters = "abcdefghijklmnopqrstuvwxyz";
-  int xaxis;
-  int yaxis;
-  string letter;
-  cout << "Ingresa el numero de caracteres que deseas ver horizontalmente:\n";
-  cin >> xaxis;
-  cout << "Ingresa el numero de caracteres que deseas ver verticalmente:\n";
-  cin >> yaxis;
-  cout << "Ingresa La letra limite:" << end;
-  cin >> letter;
-  cout << str << endl;
-  cout << "The size of str is " << str.length() << " bytes" << endl;
-  return 0;
+    // variables
+        string letters = "abcdefghijklmnopqrstuvwxyz";
+        int xaxis;
+        int yaxis;
+        string letter;
+    cout << "Ingresa el numero de caracteres que deseas ver horizontalmente:\n";
+    cin >> xaxis;
+    cout << "Ingresa el numero de caracteres que deseas ver verticalmente:\n";
+    cin >> yaxis;
+    cout << "Ingresa La letra limite:" << endl;
+    cin >> letter;
+    size_t pos = letters.find(letter);
+    letters = letters.substr(0, pos + 1);
+    string changin = letters;
+    int white = 0;
+    bool rev = false;
+
+    cout << changin;
+
+
+    return 0;
 }
 
