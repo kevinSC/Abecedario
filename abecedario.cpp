@@ -1,24 +1,15 @@
-//Librerias
-#include <iostream>
-#include <string>
+// string::find
+#include <iostream>       // std::cout
+#include <string>         // std::string
 
-//Namespace
-using namespace std;
+int main ()
+{
+  std::string str ("There are two needles in this haystack with needles.");
+  std::string str2 ("needle");
+  std::size_t found = str.find(str2);
+    std::cout << "first 'needle' found at: " << found << '\n';
 
-
-int main (){
-  string letters = "abcdefghijklmnopqrstuvwxyz";
-  int xaxis;
-  int yaxis;
-  string letter;
-  cout << "Ingresa el numero de caracteres que deseas ver horizontalmente:\n";
-  cin >> xaxis;
-  cout << "Ingresa el numero de caracteres que deseas ver verticalmente:\n";
-  cin >> yaxis;
-  cout << "Ingresa La letra limite:" << end;
-  cin >> letter;
-  cout << str << endl;
-  cout << "The size of str is " << str.length() << " bytes" << endl;
+ 
   return 0;
 }
 
